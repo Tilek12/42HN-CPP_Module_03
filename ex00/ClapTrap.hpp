@@ -6,15 +6,26 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 11:53:29 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/11/26 12:12:36 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/11/28 16:54:10 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CLAP_TRAP_HPP
-# define CLAP_TRAP_HPP
+#ifndef CLAPTRAP_HPP
+# define CLAPTRAP_HPP
 
 #include <string>
 #include <iostream>
+
+/*---------------*/
+/*  Text colors  */
+/*---------------*/
+const std::string RED		= "\033[0;31m";
+const std::string GREEN		= "\033[0;32m";
+const std::string YELLOW	= "\033[0;33m";
+const std::string BLUE		= "\033[0;34m";
+const std::string PURPLE	= "\033[0;35m";
+const std::string CYAN		= "\033[0;36m";
+const std::string RESET		= "\033[0m";
 
 class ClapTrap {
 
