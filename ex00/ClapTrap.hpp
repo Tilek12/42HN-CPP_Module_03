@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 11:53:29 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/11/28 16:54:10 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/11/28 17:54:36 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,9 @@ const std::string PURPLE	= "\033[0;35m";
 const std::string CYAN		= "\033[0;36m";
 const std::string RESET		= "\033[0m";
 
+/*-------------------------*/
+/*  Define ClapTrap class  */
+/*-------------------------*/
 class ClapTrap {
 
 private:
