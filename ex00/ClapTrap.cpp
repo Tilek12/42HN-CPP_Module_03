@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 12:14:19 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/11/28 17:54:38 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/11/30 15:14:25 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ ClapTrap::ClapTrap( std::string name ) : _name( name ),
 
 	std::cout << "ClapTrap "
 			  << YELLOW << _name << RESET
-			  << " Created."
+			  << GREEN << " Created." << RESET
 			  << std::endl;
 }
 
@@ -36,7 +36,7 @@ ClapTrap::ClapTrap( const ClapTrap& other ) : _name( other._name ),
 
 	std::cout << "ClapTrap "
 			  << YELLOW << _name << RESET
-			  << " Copy Created."
+			  << GREEN << " Copy Created." << RESET
 			  << std::endl;
 }
 
@@ -54,7 +54,7 @@ ClapTrap&	ClapTrap::operator=( const ClapTrap& other ) {
 
 	std::cout << "ClapTrap "
 			  << YELLOW << _name << RESET
-			  << " Assigned."
+			  << GREEN << " Assigned." << RESET
 			  << std::endl;
 
 	return *this;
@@ -67,7 +67,7 @@ ClapTrap::~ClapTrap( void ) {
 
 	std::cout << "ClapTrap "
 			  << YELLOW << _name << RESET
-			  << " Destroyed."
+			  << PURPLE << " Destroyed." << RESET
 			  << std::endl;
 }
 
@@ -87,7 +87,7 @@ void	ClapTrap::attack( const std::string& target ) {
 
 	std::cout << "ClapTrap "
 			  << YELLOW << _name << RESET
-			  << GREEN << " attacks " << target << RESET
+			  << YELLOW << " Attacks " << target << RESET
 			  << " with "
 			  << CYAN << _attackDamage << RESET
 			  << " points of Damage."
@@ -110,10 +110,9 @@ void	ClapTrap::takeDamage( unsigned int amount ) {
 
 	std::cout << "ClapTrap "
 			  << YELLOW << _name << RESET
-			  << PURPLE << " takes " << RESET
+			  << RED << " Takes " << RESET
 			  << CYAN << amount << RESET
-			  << PURPLE << " points of Damage. " << RESET
-			  << "Remaining HP: "
+			  << " points of Damage. Remaining HP: "
 			  << CYAN << _hitPoints << RESET
 			  << std::endl;
 }
@@ -135,7 +134,7 @@ void	ClapTrap::beRepaired( unsigned int amount ) {
 
 	std::cout << "ClapTrap "
 			  << YELLOW << _name << RESET
-			  << BLUE << " repairs itself" << RESET
+			  << BLUE << " Repairs itself" << RESET
 			  << " for "
 			  << CYAN << amount << RESET
 			  << " Hit Points. Current HP: "
