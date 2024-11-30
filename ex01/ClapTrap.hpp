@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 11:53:29 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/11/28 17:54:36 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/11/30 15:53:40 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ const std::string RESET		= "\033[0m";
 /*-------------------------*/
 class ClapTrap {
 
-private:
+protected:
 
 	std::string		_name;
 	unsigned int	_hitPoints;
