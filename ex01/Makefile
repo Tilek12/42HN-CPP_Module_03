@@ -4,7 +4,7 @@ VIOLET	= \033[0;35m
 RESET	= \033[0m
 
 # Variables
-NAME = clapTrap
+NAME = scavTrap
 SRC = main.cpp ClapTrap.cpp ScavTrap.cpp
 OBJ = $(SRC:.cpp=.o)
 CXX = c++

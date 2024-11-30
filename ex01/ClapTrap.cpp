@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 12:14:19 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/11/30 15:14:25 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/11/30 18:07:56 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,8 @@ ClapTrap::ClapTrap( std::string name ) : _name( name ),
 										 _energyPoints( 10 ),
 										 _attackDamage( 0 ) {
 
-	std::cout << "ClapTrap "
-			  << YELLOW << _name << RESET
-			  << GREEN << " Created." << RESET
-			  << std::endl;
+	std::cout << YELLOW << "ClapTrap " << _name << RESET
+			  << B_YELLOW << " Created." << RESET << std::endl;
 }
 
 /*-----------------------------------*/
@@ -34,10 +32,8 @@ ClapTrap::ClapTrap( const ClapTrap& other ) : _name( other._name ),
 											  _energyPoints( other._energyPoints ),
 											  _attackDamage( other._attackDamage ) {
 
-	std::cout << "ClapTrap "
-			  << YELLOW << _name << RESET
-			  << GREEN << " Copy Created." << RESET
-			  << std::endl;
+	std::cout << YELLOW << "ClapTrap " << _name << RESET
+			  << B_YELLOW << " Copy Created." << RESET << std::endl;
 }
 
 /*-------------------------------------------*/
@@ -52,10 +48,8 @@ ClapTrap&	ClapTrap::operator=( const ClapTrap& other ) {
 		_attackDamage = other._attackDamage;
 	}
 
-	std::cout << "ClapTrap "
-			  << YELLOW << _name << RESET
-			  << GREEN << " Assigned." << RESET
-			  << std::endl;
+	std::cout << YELLOW << "ClapTrap " << _name << RESET
+			  << B_YELLOW << " Assigned." << RESET << std::endl;
 
 	return *this;
 }
@@ -65,10 +59,8 @@ ClapTrap&	ClapTrap::operator=( const ClapTrap& other ) {
 /*-----------------------------*/
 ClapTrap::~ClapTrap( void ) {
 
-	std::cout << "ClapTrap "
-			  << YELLOW << _name << RESET
-			  << PURPLE << " Destroyed." << RESET
-			  << std::endl;
+	std::cout << YELLOW << "ClapTrap " << _name << RESET
+			  << B_YELLOW << " Destroyed." << RESET << std::endl;
 }
 
 /*--------------------------*/
@@ -78,20 +70,18 @@ void	ClapTrap::attack( const std::string& target ) {
 
 	if ( _hitPoints == 0 || _energyPoints == 0 ) {
 		std::cout << RED << "ClapTrap " << _name
-				  << " can't attack. Not enough Hit Points or Energy Points." << RESET
+				  << " can't Attack. Not enough Hit Points or Energy Points." << RESET
 				  << std::endl;
 		return;
 	}
 
 	_energyPoints--;
 
-	std::cout << "ClapTrap "
-			  << YELLOW << _name << RESET
-			  << YELLOW << " Attacks " << target << RESET
-			  << " with "
+	std::cout << YELLOW << "ClapTrap " << _name << RESET
+			  << B_YELLOW << " Attacks " << target << RESET
+			  << YELLOW << " with " << RESET
 			  << CYAN << _attackDamage << RESET
-			  << " points of Damage."
-			  << std::endl;
+			  << YELLOW << " points of Damage." << RESET << std::endl;
 }
 
 /*------------------------------*/
@@ -100,21 +90,18 @@ void	ClapTrap::attack( const std::string& target ) {
 void	ClapTrap::takeDamage( unsigned int amount ) {
 
 	if ( _hitPoints == 0 ) {
-		std::cout << RED << "ClapTrap " << _name
-				  << " is already Down." << RESET
+		std::cout << RED << "ClapTrap " << _name << " is already Down." << RESET
 				  << std::endl;
 		return;
 	}
 
 	_hitPoints = ( _hitPoints > amount ) ? ( _hitPoints - amount ) : 0;
 
-	std::cout << "ClapTrap "
-			  << YELLOW << _name << RESET
-			  << RED << " Takes " << RESET
+	std::cout << YELLOW << "ClapTrap " << _name << RESET
+			  << B_YELLOW << " Takes " << RESET
 			  << CYAN << amount << RESET
-			  << " points of Damage. Remaining HP: "
-			  << CYAN << _hitPoints << RESET
-			  << std::endl;
+			  << YELLOW << " points of Damage. Remaining HP: " << RESET
+			  << CYAN << _hitPoints << RESET << std::endl;
 }
 
 /*------------------------------*/
@@ -124,7 +111,7 @@ void	ClapTrap::beRepaired( unsigned int amount ) {
 
 	if ( _hitPoints == 0 || _energyPoints == 0 ) {
 		std::cout << RED << "ClapTrap " << _name
-				  << " can't repair itself. Not enough Hit Points or Energy Points." << RESET
+				  << " can't Repair itself. Not enough Hit Points or Energy Points." << RESET
 				  << std::endl;
 		return;
 	}
@@ -132,12 +119,11 @@ void	ClapTrap::beRepaired( unsigned int amount ) {
 	_energyPoints--;
 	_hitPoints += amount;
 
-	std::cout << "ClapTrap "
-			  << YELLOW << _name << RESET
-			  << BLUE << " Repairs itself" << RESET
-			  << " for "
+	std::cout << YELLOW << "ClapTrap " << _name << RESET
+			  << B_YELLOW << " Repairs itself" << RESET
+			  << YELLOW << " for " << RESET
 			  << CYAN << amount << RESET
-			  << " Hit Points. Current HP: "
+			  << YELLOW << " Hit Points. Current HP: " << RESET
 			  << CYAN << _hitPoints << RESET
 			  << std::endl;
 }
