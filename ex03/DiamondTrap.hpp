@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/01 16:25:38 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/01 17:54:29 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/01 21:05:44 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@
 # include "ScavTrap.hpp"
 # include "FragTrap.hpp"
 
+/*----------------------------*/
+/*  Define DiamondTrap class  */
+/*----------------------------*/
 class	DiamondTrap : public FragTrap, public ScavTrap {
 
 private:
