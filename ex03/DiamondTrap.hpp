@@ -6,13 +6,14 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/01 16:25:38 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/01 16:33:15 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/01 17:54:29 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DIAMONDTRAP_HPP
 # define DIAMONDTRAP_HPP
 
+# include "ClapTrap.hpp"
 # include "ScavTrap.hpp"
 # include "FragTrap.hpp"
 

@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 15:27:05 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/01 15:44:59 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/01 17:57:25 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 /*-------------------------*/
 /*  Define ScavTrap class  */
 /*-------------------------*/
-class ScavTrap : public ClapTrap {
+class ScavTrap : virtual public ClapTrap {
 
 public:
 

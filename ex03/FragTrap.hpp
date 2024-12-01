@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 18:35:35 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/01 15:46:41 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/01 17:56:38 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 /*-------------------------*/
 /*  Define FragTrap class  */
 /*-------------------------*/
-class FragTrap : public ClapTrap {
+class FragTrap : virtual public ClapTrap {
 
 public:
 
