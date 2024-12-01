@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 12:14:19 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/11/30 18:07:56 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/11/30 18:46:01 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ void	ClapTrap::attack( const std::string& target ) {
 	std::cout << YELLOW << "ClapTrap " << _name << RESET
 			  << B_YELLOW << " Attacks " << target << RESET
 			  << YELLOW << " with " << RESET
-			  << CYAN << _attackDamage << RESET
+			  << B_CYAN << _attackDamage << RESET
 			  << YELLOW << " points of Damage." << RESET << std::endl;
 }
 
@@ -99,9 +99,9 @@ void	ClapTrap::takeDamage( unsigned int amount ) {
 
 	std::cout << YELLOW << "ClapTrap " << _name << RESET
 			  << B_YELLOW << " Takes " << RESET
-			  << CYAN << amount << RESET
+			  << B_CYAN << amount << RESET
 			  << YELLOW << " points of Damage. Remaining HP: " << RESET
-			  << CYAN << _hitPoints << RESET << std::endl;
+			  << B_CYAN << _hitPoints << RESET << std::endl;
 }
 
 /*------------------------------*/
@@ -122,8 +122,8 @@ void	ClapTrap::beRepaired( unsigned int amount ) {
 	std::cout << YELLOW << "ClapTrap " << _name << RESET
 			  << B_YELLOW << " Repairs itself" << RESET
 			  << YELLOW << " for " << RESET
-			  << CYAN << amount << RESET
+			  << B_CYAN << amount << RESET
 			  << YELLOW << " Hit Points. Current HP: " << RESET
-			  << CYAN << _hitPoints << RESET
+			  << B_CYAN << _hitPoints << RESET
 			  << std::endl;
 }
