@@ -5,7 +5,7 @@ RESET	= \033[0m
 
 # Variables
 NAME = fragTrap
-SRC = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap
+SRC = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 OBJ = $(SRC:.cpp=.o)
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++17

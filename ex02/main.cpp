@@ -6,25 +6,26 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 16:38:06 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/11/30 16:27:36 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/01 16:11:49 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 /*-----------------*/
 /*  Main function  */
 /*-----------------*/
 int	main( void ) {
 
-	ScavTrap	scavTrap( "Serena" );
+	FragTrap	fragTrap( "frag" );
 
-	scavTrap.attack( "target" );
-	scavTrap.takeDamage( 80 );
-	scavTrap.beRepaired( 20 );
+	fragTrap.attack( "target" );
+	fragTrap.takeDamage( 50 );
+	fragTrap.beRepaired( 20 );
 
-	scavTrap.guardGate();
+	fragTrap.highFivesGuys();
 
 	return 0;
 }

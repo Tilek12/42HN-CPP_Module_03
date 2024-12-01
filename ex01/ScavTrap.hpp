@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 15:27:05 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/11/30 15:34:19 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/01 15:43:14 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 
 # include "ClapTrap.hpp"
 
+/*-------------------------*/
+/*  Define ScavTrap class  */
+/*-------------------------*/
 class ScavTrap : public ClapTrap {
 
 public:
